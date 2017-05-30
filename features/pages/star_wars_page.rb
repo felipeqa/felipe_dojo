@@ -1,23 +1,23 @@
 class Cadastro < SitePrism::Page
-    element :proxima,:xpath,
-    element :nome , :xpath,
-    element :email ,:xpath, 
-    element :like_yes ,:xpath,
-    element :like_no ,:xpath, 
-    element :nenhum ,:xpath, 
-    element :ep_um ,:xpath, 
-    element :ep_dois ,:xpath, 
-    element :ep_tres ,:xpath, 
-    element :ep_quatro ,:xpath, 
-    element :ep_cinco ,:xpath, 
-    element :ep_seis ,:xpath, 
-    element :ep_sete ,:xpath, 
-    element :outro_filme ,:xpath, 
-    element :outro_qual ,:xpath, 
-    element :personagem ,:xpath, 
-    element :check_box, :xpath ,
-    element :check_yes, :xpath , 
-    element :check_no, :xpath ,
-    element :voltar, :xpath,  
-    element :salvar, :xpath, 
+    element :proxima,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div/content/span'
+    element :nome , :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[2]/div[2]/div/div[1]/div/div[1]/input'
+    element :email ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[3]/div[2]/div/div[1]/div/div[1]/input'
+    element :like_yes ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[4]/div[2]/div/content/div/label[1]/div/div[2]/div/span'
+    element :like_no ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[4]/div[2]/div/content/div/label[2]/div/div[2]/div/span'
+    element :nenhum ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[1]/div/label/div/div[2]/div/span'
+    element :ep_um ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[2]/div/label/div/div[2]/div/span'
+    element :ep_dois ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[3]/div/label/div/div[2]/div/span'
+    element :ep_tres ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[4]/div/label/div/div[2]/div/span'
+    element :ep_quatro ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[5]/div/label/div/div[2]/div/span'
+    element :ep_cinco ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[6]/div/label/div/div[2]/div/span'
+    element :ep_seis ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[7]/div/label/div/div[2]/div/span'
+    element :ep_sete ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[8]/div/label/div/div[2]/div/span'
+    element :outro_filme ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[9]/div/div/label/div/div[2]/div/span'
+    element :outro_qual ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[5]/div[2]/div[9]/div/div/div/div/div/div[1]/input'
+    element :personagem ,:xpath, '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[6]/div[2]/div/div[1]/div/div[1]/input'
+    element :combo_box, :xpath , '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[7]/div[2]/div[1]/div[2]'
+    element :combo_yes, :xpath , '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[7]/div[2]/div[2]/div[3]'
+    element :combo_no, :xpath , '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[7]/div[2]/div[2]/div[4]/content'
+    element :voltar, :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div[1]/content/span'
+    element :salvar, :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div[2]/content/span'
 end
