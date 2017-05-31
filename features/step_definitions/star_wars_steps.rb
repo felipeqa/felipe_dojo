@@ -6,30 +6,43 @@ Dado(/^que eu esteja na página inicial do Star War$/) do
 end
 
 Quando(/^eu preencher todas as informações$/) do
-  @completo = FormularioCompletoMethod.new
-  @completo.preencher_completo
+  @Completo = FormularioCompletoMethod.new
+  @Completo.preencher_completo
 end
 
 Quando(/^enviar o cadastro$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  @Cadastro = Cadastro.new
+  @Cadastro.enviar.click
 end
 
 Então(/^eu verifico que foi enviado com sucesso$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  assert_text 'Obrigado por responder as perguntas! =)'
 end
 
 Quando(/^eu preencher algumas informações$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  @Incompleto = FormularioIncompletoMethod.new
+  @Incompleto.preencher_incompleto
 end
 
 Então(/^eu verifico que o cadastro não está completo$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  assert_text 'Esta pergunta é obrigatória'
 end
 
 Quando(/^voltar a pagina inicial$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+	@Cadastro = Cadastro.new
+ 	@Cadastro.voltar.click
 end
 
 Então(/^eu verifico que o estou na pagina inicial$/) do
-  pending # Write code here that turns the phrase above into concrete actions
+  assert_text 'Star Wars Questions' && 'Nunca envie senhas pelo Formulários Google.'
+end
+
+Quando(/^eu preecher o email invalido "([^"]*)"$/) do |email_invalido|
+ 	@Cadastro = Cadastro.new
+  @Cadastro.proxima.click
+ 	@Cadastro.email.set email_invalido
+end	
+
+Então(/^verifico que o email não é valido$/) do
+  assert_text 'Precisa ser um endereço de e-mail válido'
 end

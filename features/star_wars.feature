@@ -24,3 +24,7 @@ Cenário: Preencher Cadastro Completo e voltar a página inicial
 	Quando eu preencher todas as informações
 	E voltar a pagina inicial
 	Então eu verifico que o estou na pagina inicial
+
+Cenário: Preencher Email invalido 
+	Quando eu preecher o email invalido "Teste@ teste.br@com"
+	Então verifico que o email não é valido

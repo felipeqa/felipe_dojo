@@ -19,7 +19,8 @@ class FormularioCompletoMethod < SitePrism::Page
 		@Cadastro.personagem.set Faker::StarWars.character
 		@Cadastro.combo_box.click
 		@Cadastro.combo_yes.click
-		@Cadastro.enviar.click
+		@Cadastro.combo_box.click
+		@Cadastro.combo_no.click
 	end
 
 end	
