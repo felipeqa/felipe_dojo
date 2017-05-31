@@ -19,5 +19,5 @@ class Cadastro < SitePrism::Page
     element :combo_yes, :xpath , '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[7]/div[2]/div[2]/div[3]'
     element :combo_no, :xpath , '//*[@id="mG61Hd"]/div/div[2]/div[2]/div[7]/div[2]/div[2]/div[4]/content'
     element :voltar, :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div[1]/content/span'
-    element :salvar, :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div[2]/content/span'
+    element :enviar, :xpath, '//*[@id="mG61Hd"]/div/div[2]/div[3]/div[1]/div/div[2]/content/span'
 end

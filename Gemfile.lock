@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    blabla (0.0.1)
     builder (3.2.3)
     capybara (2.14.0)
       addressable
@@ -76,6 +77,7 @@ PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
+  blabla (~> 0.0.1)
   capybara
   cucumber
   pry
