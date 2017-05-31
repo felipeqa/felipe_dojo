@@ -44,5 +44,8 @@ Quando(/^eu preecher o email invalido "([^"]*)"$/) do |email_invalido|
 end	
 
 Então(/^verifico que o email não é valido$/) do
-  assert_text 'Precisa ser um endereço de e-mail válido'
+  assert_text('Precisa ser um endereço de e-mail válido') 
+  page.execute_script "window.scroll(0, 300)"
+  #page.execute_script "document.getElementsByName('entry.443565211')[0].focus()" Focus em teste
+  sleep 1
 end
