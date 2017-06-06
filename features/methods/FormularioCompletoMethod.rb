@@ -17,6 +17,7 @@ class FormularioCompletoMethod < SitePrism::Page
 		@Cadastro.outro_filme.click
 		@Cadastro.outro_qual.set 'O novo'
 		@Cadastro.personagem.set Faker::StarWars.character
+		#binding.pry --- Ótimo para debugar 
 		@Cadastro.combo_box.click
 		@Cadastro.combo_yes.click
 		@Cadastro.combo_box.click
